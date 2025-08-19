@@ -18,7 +18,7 @@ async function getIgDirectFn() {
   throw new Error("instagram-url-direct: chaqiriladigan funksiya topilmadi");
 }
 
-function normalizeIgResult(res) {
+function normalizeIgResult(res) {  
   const out = new Set();
   const push = (u) => { if (u && typeof u === "string") out.add(u); };
   if (!res) return [];
