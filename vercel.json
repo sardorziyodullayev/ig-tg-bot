@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "index.js", "use": "@vercel/node" }
+  ],
+  "routes": [
+    { "src": "https://my-telegram-bot.vercel.app/webhook", "dest": "index.js" }
+  ]
+}
